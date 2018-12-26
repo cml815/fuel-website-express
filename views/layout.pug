@@ -1,7 +1,31 @@
 doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+html(lang='en')
+	head
+		title= title
+		link(rel="stylesheet" href='stylesheets/foundation.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		header
+			.row
+				.columns 
+					ul.vertical.medium-horizontal.menu(data-responsive-menu='drilldown medium-dropdown')
+						li
+							a(href='/') Home
+						li
+							a(href='/about') About
+						li
+							a(href='/work') What We Do
+								ul.vertical.menu
+									li
+										a(href='/work/funding-advice') Advice on Fundraising
+									li
+										a(href='/work/grants') Grant Writing
+									li
+										a(href='/work/content-marketing') Content Marketing
+						li
+							a(href='contact') Contact
+		block content
+		footer
+
+
+

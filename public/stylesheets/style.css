@@ -1,8 +1,10 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #efefef;
 }
-
-a {
-  color: #00B7FF;
+body ul {
+  list-style-type: none;
+}
+.hero {
+  height: 50vh;
+  padding: 1rem;
 }
