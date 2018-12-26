@@ -4,6 +4,7 @@ html(lang='en')
 		title= title
 		link(rel="stylesheet" href='stylesheets/foundation.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel="icon" href="/public/favicon.ico")
 	body
 		header
 			.row
@@ -24,8 +25,19 @@ html(lang='en')
 										a(href='/work/content-marketing') Content Marketing
 						li
 							a(href='contact') Contact
-		block content
-		footer
+			block content
+			block footer
+				footer
+					.row
+						.columns.small-2.large-3
+							p Stuff in footer 
+							a(href="mailto:caroline@fuelcopy.com")
+						.columns.small-2.large-3
+							h1 more stuff
+						.columns.small-2.large-3
+							p stuff stuff
+
+
 
 
 

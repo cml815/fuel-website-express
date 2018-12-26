@@ -36,6 +36,8 @@ app.use('/contact', contactRouter);
 app.use('/', routes);
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/favicon.ico', express.static('images/favicon.ico'));
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
