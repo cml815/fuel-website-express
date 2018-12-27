@@ -18,6 +18,11 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Get in Touch!' });
 });
 
+router.get('/portfolio', function(req, res, next) {
+  res.render('portfolio');
+});
+
+module.exports = router;
 module.exports = router;
 
 
