@@ -1,4 +1,22 @@
 extends layout
 
 block content
-	h1= title
+	form-header
+		h1= title
+	form(method='post', action='/contact', novalidate='')
+		.form-field
+			label(for='message') Message
+			textarea#message.input(name='message', rows='4', autofocus='')
+		.form-field
+			label(for='email') Email
+			input#email.input(name='email', type='email', value='')
+		.form-actions
+			// button.btn(type='submit') Send
+			input(type='submit', value='Add Post')
+
+	form(action='/team_name_url/', method='post')
+		label(for='team_name') Enter name: 
+		input#team_name(type='text', name='name_field', value='Default name for team.')
+		input(type='submit', value='OK')
+
+

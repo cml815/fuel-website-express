@@ -3,41 +3,46 @@ html(lang='en')
 	head
 		title= title
 		meta(name='viewport', content='width=device-width, initial-scale=1')
-		link(rel="stylesheet" href='stylesheets/foundation.css')
-		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', type='text/css', href='/stylesheets/normalize.css')
+		link(rel='stylesheet', type='text/css', href='/stylesheets/foundation.css')
+		link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+		link(href='https://fonts.googleapis.com/css?family=Neuton:700|Rubik:400', rel='stylesheet')
+		link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+
 	body
 		header
-			.row
-				.columns 
-					ul.vertical.medium-horizontal.menu(data-responsive-menu='drilldown medium-dropdown')
-						li
-							a(href='/') Home
-						li
-							a(href='/about') About
-						li
-							a(href='/work') What We Do
-								ul.vertical.menu
-									li
-										a(href='/work/funding-advice') Advice on Fundraising
-									li
-										a(href='/work/grants') Grant Writing
-									li
-										a(href='/work/content-marketing') Content Marketing
-						li
-							a(href='contact') Contact
-						li
-							a(href='portfolio') View Portfolio
-			block content
-			block footer
-				footer
+			nav.navbar
+				a.logo(href='/') Fuel Copy
+				ul#js-menu.main-nav
+					li
+						a.nav-links(href='/work') What We Do
+					li
+						a.nav-links(href='/about') About 
+					li
+						a.nav-links(href='/contact') Contact 
+					li
+						a.nav-links(href='/portfolio') Portfolio
+		block content
+		block footer
+			footer
+				.page-footer
 					.row
-						.columns.small-2.large-3
-							p Stuff in footer 
-							a(href="mailto:caroline@fuelcopy.com")
-						.columns.small-2.large-3
-							h1 more stuff
-						.columns.small-2.large-3
-							p stuff stuff
+						.columns
+							h1 Tell us what you need. 
+							a.button(href='about.html') Learn More
+				.row
+					.columns.small-2.large-3
+						p Stuff in footer 
+						a(href="mailto:caroline@fuelcopy.com")
+					.columns.small-2.large-3
+						h1 more stuff
+					.columns.small-2.large-3
+						p stuff stuff
+				.row
+					p &copy<script>document.write(new Date().getFullYear());</script> Fuel Communications, LLC | All Rights Reserved. 
+
+	script(type='text/javascript', src='path-to-javascript-file.js')
+	script(src="../javascripts/contact-form.js")
 
 
 
